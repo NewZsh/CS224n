@@ -31,7 +31,7 @@ def softmax(x):
     if len(x.shape) > 1:
         # Matrix
         ### YOUR CODE HERE
-        cal_softmax = lambda x: np.exp(x) / np.sum(np.exp(x), axis=1)
+        cal_softmax = lambda x: np.exp(x) / np.repeat(np.sum(np.exp(x), axis=1, keepdims=True), x.shape[1], axis=1)
         x = cal_softmax(x - np.reshape(np.max(x, axis=1), [x.shape[0], 1]))
         ### END YOUR CODE
     else:
