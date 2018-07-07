@@ -2,4 +2,5 @@ datasets
 .DS_Store
 __MACOSX
 *.pyc
+*.npy
 
