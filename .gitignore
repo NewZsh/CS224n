@@ -3,4 +3,4 @@ datasets
 __MACOSX
 *.pyc
 *.npy
-
+weights
