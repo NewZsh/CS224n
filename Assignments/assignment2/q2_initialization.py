@@ -25,6 +25,7 @@ def xavier_weight_init():
             out: tf.Tensor of specified shape sampled from the Xavier distribution.
         """
         ### YOUR CODE HERE
+        out = tf.random_uniform(shape, **kwargs)
         ### END YOUR CODE
         return out
     # Returns defined initializer function.
